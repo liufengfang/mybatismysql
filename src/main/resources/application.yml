@@ -1,5 +1,5 @@
 server:
-  port: 8089
+  port: 8088
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/public
@@ -9,5 +9,6 @@ spring:
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location: classpath:/mybatis/config/mybatis-config.xml
+  type-aliases-package: com.liuff.entity
 
 
