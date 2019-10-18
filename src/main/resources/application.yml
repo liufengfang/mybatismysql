@@ -45,7 +45,7 @@ spring:
         # 允许清空统计数据
         reset-enable: true
         login-username: admin
-        login-password: 123456
+        login-password: 111111
         # StatViewSerlvet展示出来的监控信息比较敏感，是系统运行的内部情况，如果你需要做访问控制，可以配置allow和deny这两个参数
         # deny优先于allow，如果在deny列表中，就算在allow列表中，也会被拒绝。如果allow没有配置或者为空，则允许所有访问
         # 配置的格式
