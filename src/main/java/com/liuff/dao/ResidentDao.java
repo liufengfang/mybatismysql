@@ -1,12 +1,14 @@
 package com.liuff.dao;
 
 import com.liuff.entity.Resident;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by liufengfang on 2019/10/14.
  */
+@Repository
 public interface ResidentDao {
     /**
      * 新增用户
