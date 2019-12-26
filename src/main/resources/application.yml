@@ -58,5 +58,8 @@ mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location: classpath:/mybatis/config/mybatis-config.xml
   type-aliases-package: com.liuff.entity
+logging:
+  level:
+    com.liuff.dao.ResidentDao: debug
 
 
