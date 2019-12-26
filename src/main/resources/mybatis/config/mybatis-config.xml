@@ -6,4 +6,9 @@
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
+    <plugins>
+        <plugin interceptor="com.liuff.plugin.MyPlugin">
+            <property name="dbType" value="myslq"/>
+        </plugin>
+    </plugins>
 </configuration>
