@@ -7,8 +7,9 @@
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
     <plugins>
-        <plugin interceptor="com.liuff.plugin.MyPlugin">
-            <property name="dbType" value="myslq"/>
+        <plugin interceptor="com.liuff.plugin.MySecondPlugin">
+            <property name="dbType" value="mysql"/>
+            <property name="limitNum" value="5"/>
         </plugin>
     </plugins>
 </configuration>
