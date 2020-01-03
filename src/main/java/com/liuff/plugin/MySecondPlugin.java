@@ -31,7 +31,7 @@ public class MySecondPlugin implements Interceptor {
         //取出被拦截对象
         StatementHandler stmtHandler = (StatementHandler) invocation.getTarget();
         MetaObject metaStmtHandler = SystemMetaObject.forObject(stmtHandler);
-        LOGGER.error("metaStmtHandler.getGetterNames()="
+        LOGGER.debug("metaStmtHandler.getGetterNames()="
                 + Arrays.toString(metaStmtHandler.getGetterNames()));
         //获取完整的被代理对象
         while (metaStmtHandler.hasGetter("h")) {

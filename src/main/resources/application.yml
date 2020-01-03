@@ -60,6 +60,6 @@ mybatis:
   type-aliases-package: com.liuff.entity
 logging:
   level:
-    com.liuff.dao.ResidentDao: debug
+    com.liuff: debug
 
 
