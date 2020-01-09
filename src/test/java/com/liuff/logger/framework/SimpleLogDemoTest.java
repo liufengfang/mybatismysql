@@ -20,4 +20,9 @@ public class SimpleLogDemoTest {
         simpleLogDemo.druidLog();
     }
 
+    @Test
+    public void slf4jLogTest() {
+        simpleLogDemo.slf4jLog();
+    }
+
 }
