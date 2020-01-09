@@ -48,10 +48,11 @@ public class MySecondPlugin implements Interceptor {
         sql = sql.trim();
         LOGGER.error("boudsql = " + sql);
 
-        if ("mysql".equals(this.dbType) && sql.indexOf(TEMP_TABLE_BY_PLUGIN) == -1) {
+        if ("mysql".equals(this.dbType) && sql.indexOf(TEMP_TABLE_BY_PLUGIN) == -1
+                && sql.indexOf("select") == 0) {
             String newSql = "select * from (" + sql + ") " + TEMP_TABLE_BY_PLUGIN
                     + " limit " + limitNum;
-            metaStmtHandler.setValue("delegate.boundSql.sql",newSql);
+            metaStmtHandler.setValue("delegate.boundSql.sql", newSql);
         }
 
         return invocation.proceed();
